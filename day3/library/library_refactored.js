@@ -65,12 +65,13 @@ var library = {
                   this.printTracks();
 
               },
-  addPlaylist: function (name) {
+  addPlaylist: function (name)
+              {
 
                   var newId = this.uid();
                   this.playlists[newId] = {id: newId, name: name, tracks: []};
 
-}
+              }
 
   }
 
