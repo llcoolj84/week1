@@ -1,7 +1,7 @@
 //Write a function countLetters that can return to us all the unique characters that exist in a string that is passed into the function
 
 function countLetters(str){
-  var noSpaces = str.toLowerCase().split(" ").join("");
+  var noSpaces = str.toLowerCase().split(" ").join("/n");
   console.log(noSpaces);
   var myCharCount = {};
 

@@ -50,8 +50,8 @@ function calculateSalesTax(salesData, taxRates) {
     var nameOfCompany = salesData[i].name;
 
      if (output[nameOfCompany]) {
-        output[nameOfCompany].totalSales += totalSales;
-        output[nameOfCompany].totalSalesTax += salesTotalTax ;
+        output[nameOfCompany].totalSales += totalSales;         // adds additional sales to total sales of the company
+        output[nameOfCompany].totalSalesTax += salesTotalTax ; // adds additional salesTax to existing company
 
      } else {
 
