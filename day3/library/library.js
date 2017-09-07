@@ -118,8 +118,8 @@ var addPlaylist = function (name) {
   library.playlists[newId] = {id: newId, name: name, tracks: []};
 
 }
-addPlaylist('Jerk');
-console.log(library.playlists);
+//addPlaylist('Jerk');
+//console.log(library.playlists);
 
 
 // STRETCH:
