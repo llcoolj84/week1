@@ -130,4 +130,26 @@ var addPlaylist = function (name) {
 
 var printSearchResults = function(query) {
 
+    for (var i in library.tracks) {
+      var str = library.tracks[i].name;
+      var repeat;
+      var searchResult = (str.search(new RegExp(query, "i")));
+      //console.log(searchResult); // searches the string for the 'query' and ignores capital letters
+
+      if ( searchResult !== -1 && repeat !== library.tracks[i]) {
+
+        console.log('something was found, here\'s what we found')
+        repeat = library.tracks[i];
+        console.log(library.tracks[i]);
+
+        } else {
+        console.log("nothing was found, try again");
+      }
+    }
+
 }
+
+printSearchResults('code');
+
+
+
