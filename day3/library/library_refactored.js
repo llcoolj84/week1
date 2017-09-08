@@ -127,8 +127,14 @@ var library = {
 // tip: use "string".search("tri")
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search
 
-var printSearchResults = function(query) {
 
+ar printSearchResults = function(query) {
 
+ for(i in library.tracks){ //function search returns -1 if substring wasn't found. Otherwise, returns index of letter it starts with
+    if (library.tracks[i].artist.search(query) >= 0 || library.tracks[i].name.search(query) >= 0 || library.tracks[i].album.search(query) >= 0)
+      console.log(library.tracks[i].id);
+  }
 
 }
+
+printSearchResults("J")
