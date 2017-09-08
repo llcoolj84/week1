@@ -1,7 +1,11 @@
 var wrapLog = function (callback, name) {
 
     return function() {
-      console.log(callback.apply(this,arguments));
+
+    var answer = callback.apply(this,arguments); // grab arguments from logVolume
+    var array = Array.from(arguments).join(' ,'); // grab arguments and turn them into array
+    console.log( name + " [" + array + "] "+ " ==> " + answer);
+
     };
 
 
