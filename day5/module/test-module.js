@@ -1,7 +1,7 @@
 module.exports = {
-  FAVNUMBERS: 12345,
-  FAVFOODS: "pizza",
-  FAVLETTERS: "k",
+  FAVNUMBERS: [12345, 678910],
+  FAVFOOD: "pizza",
+  FAVLETTER: "k",
   favnumbers: function() {
     console.log("These are my 5 favorite numbers " + this.FAVNUMBERS);
   },
@@ -9,6 +9,6 @@ module.exports = {
     console.log("These are my 3 favorite letters " + this.FAVLETTER);
   },
   favfood: function() {
-  console.log("These are my 2 favorite foods" + this.FAVFOOD);
+  console.log("My favorite food is " + this.FAVFOOD);
   }
 };

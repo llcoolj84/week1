@@ -27,7 +27,8 @@
 
 var myNumbers = require("./test-module.js");
 
-console.log(myNumbers);  // logs a myNumber object
+console.log(myNumbers.FAVNUMBERS[1]);  // logs a myNumber object
 
 myNumbers.favnumbers();  // invokes the function `favnumbers`
 
+myNumbers.favfood();
