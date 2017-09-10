@@ -18,3 +18,4 @@ function obfuscate(password) {
 }
 
 console.log(obfuscate(process.argv.slice([2])));
+
