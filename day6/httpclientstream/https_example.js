@@ -8,8 +8,6 @@ var https = require('https');
 console.log('I did it!');
 
 // called by https when the request is made.
-// called by https when the request is made.
-// called by https when the request is made.
 var callback = function(response) {
   console.log('In response handler callback!');
 
